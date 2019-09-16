@@ -1,0 +1,11 @@
+## Test Websocket Quiz Application
+
+A simple app to prove the concept of a websocket-based multiplayer mode for a quiz app
+
+### Running Locally
+
+Edit shell script SOCKETURL environment variable to equal your machine's local IP address (can be found with ifconfig(bash)/ipconfig(windows) commands)
+
+Then run:
+
+`./run.sh`

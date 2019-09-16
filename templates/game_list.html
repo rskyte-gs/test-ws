@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .game {
+                border: 1px solid red;
+                border-radius: 2px;
+                height: 20px;
+                width: 80px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Games</h2>
+        <div>
+            {% for game in games %}
+                <a class="game" href="/games/{{game}}">
+                    {{game}}
+                </a>
+                <br>
+            {% endfor %}
+        </div>
+    </body>
+</html>
