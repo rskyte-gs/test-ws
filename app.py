@@ -26,11 +26,11 @@ def render_view(viewname, params):
 def index():
     return render_view('index.html', {})
 
-@app.route('/v1/games/create', methods=['GET'])
+@app.route('/games/create', methods=['GET'])
 def game_form():
     return render_view('create_game.html', {})
 
-@app.route('/v1/games/create', methods=['POST'])
+@app.route('/games/create', methods=['POST'])
 def create_game():
     name = request.form['game_name']
     while name in games.keys():
@@ -43,14 +43,14 @@ def create_game():
         'slider1': 25,
         'slider2': 0
     }
-    resp = make_response(redirect('v1/games/all'))
+    resp = make_response(redirect('games/all'))
     return resp
 
-@app.route('/v1/games/all')
+@app.route('/games/all')
 def list_game():
     return render_view('game_list.html', { 'games': games })
 
-@app.route('/v1/games/<game_name>')
+@app.route('/games/<game_name>')
 def join_game(game_name):
      return render_view('game.html', { 'slider1': games[game_name]['slider1'], 'slider2': games[game_name]['slider2'], 'game': game_name, 'socketURL': socketURL })
 
