@@ -1,0 +1,10 @@
+{
+    "v1": {
+        "app_function": "app.app",
+        "aws_region": "eu-west-2",
+        "profile_name": "default",
+        "project_name": "test-ws",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-ztxxc9guk"
+    }
+}
