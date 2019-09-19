@@ -4,7 +4,7 @@ A simple app to prove the concept of a websocket-based multiplayer mode for a qu
 
 ### Running Locally
 
-Edit shell script SOCKETURL environment variable to equal your machine's local IP address (can be found with ifconfig(bash)/ipconfig(windows) commands)
+Edit shell script SOCKETURL environment variable to equal your machine's local IP address (can be found with ifconfig command)
 
 Then run:
 
